@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="instagram-wrapper">
+        <div class="instagram-phone">
+
+         
+v          <img src="smartphone.png" alt="">
+
+        </div>
+        <div class="instagram-continue">
+            <div class="group">
+                <img src="./img-instagram.svg" alt="instagram logo" class="instagram-logo">
+                <div class="profile-photo">
+                    <img src="./minhafoto.jpg" alt="foto de perfil">
+                </div>
+                <a href=""  class="instagram-login">Continue como rafaell362</a>
+                <a href="" clas="instagram-logout">Remover conta</a>
+            </div>
+            <div class="group">
+                <p class="not-account"></p>
+                <p class="not-account">
+                    <span class="link-blue">Alternar Contas</span>
+                    ou
+                    <span class="link-blue">Inscreva-se</span>
+                </p>
+            </div>
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 10000);    
+}
+</script>
+
+</body>
+</html>
